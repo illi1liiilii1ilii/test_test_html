@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 HTML 예제</title>
+    <script>
+        function searchCity(city) {
+            window.location.href = `https://www.google.com/search?q=${city}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>안녕하세요, 세계!</h1>
+    <p>이것은 간단한 HTML 예제입니다.</p>
+    <table border="1">
+        <tr>
+            <th>도시</th>
+            <th>국가</th>
+            <th>기후</th>
+            <th>환율</th>
+            <th>통화단위</th>
+        </tr>
+        <tr>
+            <td onclick="searchCity('서울')" style="cursor: pointer; color: blue;">서울</td>
+            <td>대한민국</td>
+            <td>온대</td>
+            <td>1,200 KRW/USD</td>
+            <td>원</td>
+        </tr>
+        <tr>
+            <td onclick="searchCity('뉴욕')" style="cursor: pointer; color: blue;">뉴욕</td>
+            <td>미국</td>
+            <td>온대</td>
+            <td>1 USD/USD</td>
+            <td>달러</td>
+        </tr>
+        <tr>
+            <td onclick="searchCity('도쿄')" style="cursor: pointer; color: blue;">도쿄</td>
+            <td>일본</td>
+            <td>온대</td>
+            <td>110 JPY/USD</td>
+            <td>엔</td>
+        </tr>
+        <tr>
+            <td onclick="searchCity('런던')" style="cursor: pointer; color: blue;">런던</td>
+            <td>영국</td>
+            <td>해양성</td>
+            <td>0.75 GBP/USD</td>
+            <td>파운드</td>
+        </tr>
+        <tr>
+            <td onclick="searchCity('파리')" style="cursor: pointer; color: blue;">파리</td>
+            <td>프랑스</td>
+            <td>해양성</td>
+            <td>0.85 EUR/USD</td>
+            <td>유로</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
